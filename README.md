@@ -45,7 +45,7 @@ bitcoin
 ![](http://www.czxa.top/finance/img/czxa_2018-09-17_21.56.33.png)
 
 ### cnstock2 -- 爬取沪市、深市或两市所有上市公司基本情况数据
-这个命令需要两个shell命令支持，具体阅读我的这篇博客：[彻底解决Stata无法读取过宽文件的问题&cnstock2命令获取上市公司基本情况信息](http://www.czxa.top/posts/43828/)。Mac用户可以直接使用。Windows用户需要安装curl和[tr](http://batch-cn.qiniudn.com/tool/tr.exe)才能使用。
+这个命令需要两个shell命令支持，具体阅读我的这篇博客：[彻底解决Stata无法读取过宽文件的问题&cnstock2命令获取上市公司基本情况信息](http://www.czxa.top/posts/43828/)。Mac用户可以直接使用。Windows用户需要安装curl和[sed](http://batch-cn.qiniudn.com/tool/sed.exe)才能使用。
 ```stata
 /* 下载两市所有上市公司的基本情况数据： */
 cnstock2
