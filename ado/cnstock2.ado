@@ -15,9 +15,8 @@ version 14.0
 	if "`market'" == "SZ" local url "http://stockdata.stock.hexun.com/gszl/data/jsondata/jbgk.ashx?count=2000&on=1&titType=null&page=1&callback=hxbase_json15"
 	if "`market'" == "" local url "http://stockdata.stock.hexun.com/gszl/data/jsondata/jbgk.ashx?count=5000&titType=null&page=1&callback=hxbase_json15"
 	qui{
-		copy "`url'" temp.txt, replace
-		utrans temp.txt
-		!cat temp.txt|tr "{" "\n" > my.txt
+		!curl `url'|tr "{" "\n" > my.txt
+		utrans my.txt
 		infix strL v 1-20000 using my.txt, clear
 		drop in 1/2
 		split v, parse(,)
