@@ -86,6 +86,7 @@ cntrade2 1, start(20180101) end(20180701) index
 ![](http://www.czxa.top/finance/img/czxa_2018-09-17_22.04.21.png)
 
 ###  copen -- 在Stata中打开指定文件、网页或文件夹
+<font color = 'red'>注意：Windows系统下只能打开文件。</font>
 ```stata
 copen www.baidu.com
 copen temp.txt
@@ -182,6 +183,7 @@ GDP增长率|gdp-growth-rate
 矿业生产|mining-production
 
 ###  irate -- 从中国债券信息网获取数据绘制中债国债到期收益率曲线图
+<font color = 'red'>注意：暂不适用WindowsOS！</font>
 ```stata
 irate
 ```
