@@ -12,7 +12,7 @@ finance：Stata与金融<img src="https://github.com/czxa/Web_data_Source/raw/ma
 net install finance, from("http://www.czxa.top/finance")
 ```
 
-### 安装方法二(这个安装方法可以直接安装颜色文件)：
+### 安装方法二(推荐)：
 
 * 首先你需要安装github命令，这个命令是用来安装github上的命令的：
 
