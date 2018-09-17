@@ -75,6 +75,5 @@ version 14.0
 	}
 	di "下载完成！"
 	di "数据来源：和讯网"
-	erase temp.txt
 	erase my.txt
 end
