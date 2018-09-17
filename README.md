@@ -42,7 +42,7 @@ sysdir
 ```stata
 bitcoin
 ```
-![](/img/czxa_2018-09-17_21.56.33.png)
+![](http://www.czxa.top/finance/img/czxa_2018-09-17_21.56.33.png)
 
 ### cnstock2 -- 爬取沪市、深市或两市所有上市公司基本情况数据
 这个命令需要两个shell命令支持，具体阅读我的这篇博客：[彻底解决Stata无法读取过宽文件的问题&cnstock2命令获取上市公司基本情况信息](http://www.czxa.top/posts/43828/)。Mac用户可以直接使用。Windows用户需要安装curl和[tr](http://batch-cn.qiniudn.com/tool/tr.exe)才能使用。
@@ -54,7 +54,7 @@ cnstock2, m(SH)
 /* 下载深市所有上市公司的基本情况数据： */
 cnstock2, m(SZ)
 ```
-![](/img/czxa_2018-09-17_22.01.25.png)
+![](http://www.czxa.top/finance/img/czxa_2018-09-17_22.01.25.png)
 
 ### cntrade2 -- 从网易财经获取股票交易数据
 这个命令是对李春涛的cntrade的修改，主要是通过修改变量的名称使之更方便使用。
@@ -83,7 +83,7 @@ cntrade2 codelist, [s:tart(string) e:nd(string) s:tock i:ndex]
 cntrade2 1, start(20180101) end(20180701)
 cntrade2 1, start(20180101) end(20180701) index
 ```
-![](/img/czxa_2018-09-17_22.04.21.png)
+![](http://www.czxa.top/finance/img/czxa_2018-09-17_22.04.21.png)
 
 ###  copen -- 在Stata中打开指定文件、网页或文件夹
 ```stata
@@ -95,14 +95,14 @@ copen temp.txt
 ```stata
 ctbc2
 ```
-![](/img/czxa_2018-09-17_22.07.14.png)
+![](http://www.czxa.top/finance/img/czxa_2018-09-17_22.07.14.png)
 
 ### exrate -- 从第一黄金网获取财经时间序列数据
 这个命令的详细介绍可以参考这篇文章：[exrate——从第一黄金网获取财经数据](http://www.czxa.top/posts/40913/)。这个命令大概可以获取400个观测值，可以用于获取汇率、黄金、指数等数据。
 ```stata
 exrate USDCNY
 ```
-![](/img/czxa_2018-09-17_22.08.28.png)
+![](http://www.czxa.top/finance/img/czxa_2018-09-17_22.08.28.png)
 
 ### exrate2 -- 从和讯网获取汇率时间序列数据
 这个比起上面的那个有所进步，可以获取过去一千个观测值。
@@ -111,13 +111,13 @@ exrate USDCNY
 ```stata
 exrate2 USDCNY
 ```
-![](/img/czxa_2018-09-17_22.13.06.png)
+![](http://www.czxa.top/finance/img/czxa_2018-09-17_22.13.06.png)
 
 ### fxrate -- 在Stata中查询人民币的汇率
 ```stata
 fxrate
 ```
-![](/img/czxa_2018-09-17_22.15.02.png)
+![](http://www.czxa.top/finance/img/czxa_2018-09-17_22.15.02.png)
 
 ###  ipanel -- Tradeconomics数据接口，提供30+种各国数据的下载
 #### 语法
@@ -137,7 +137,7 @@ continent(string): 指定下载哪个大洲的国家，如果不指定则为全�
 ipanel interest-rate
 ipanel interest-rate, c(g20)
 ```
-![](/img/czxa_2018-09-17_22.19.22.png)
+![](http://www.czxa.top/finance/img/czxa_2018-09-17_22.19.22.png)
 
 #### 可选变量
 
@@ -185,7 +185,7 @@ GDP增长率|gdp-growth-rate
 ```stata
 irate
 ```
-![](/img/irate.png)
+![](http://www.czxa.top/finance/img/irate.png)
 
 ### kline2 -- 调用ECharts绘制蜡烛图
 #### 语法
@@ -214,7 +214,7 @@ kline2 code, [start(string) end(string) stock index scheme(string)]
 kline2 1, start(20180101) end(20180701)
 kline2 1, start(20180101) end(20180701) index
 ```
-![](/img/czxa_2018-09-17_22.23.55.png)
+![](http://www.czxa.top/finance/img/czxa_2018-09-17_22.23.55.png)
 
 ### numdate2string -- 将数值型日期转变成字符串型日期
 #### 语法
@@ -286,7 +286,7 @@ numdate2timestamp date, gen(timestamp)
 ```stata
 pzrate
 ```
-![](/img/czxa_2018-09-17_22.36.24.png)
+![](http://www.czxa.top/finance/img/czxa_2018-09-17_22.36.24.png)
 
 ## stkd -- 根据输入的股票代码查询股票的详细信息
 ### 用法：
@@ -370,7 +370,7 @@ stkd 5, path(~/Desktop) s
 stkd 6, fmt(dta)
 stkd 7, c
 ```
-![](/img/czxa_2018-09-17_22.40.18.png)
+![](http://www.czxa.top/finance/img/czxa_2018-09-17_22.40.18.png)
 
 ### stkpv2 -- 绘制股价棒状图
 #### 语法
@@ -398,7 +398,7 @@ stkpv2 code, [start(string) end(string) stock index]
 stkpv2 1, start(20180101) end(20180701)
 stkpv2 1, start(20180101) end(20180701) index
 ```
-![](/img/stkpv2.png)
+![](http://www.czxa.top/finance/img/stkpv2.png)
 
 ### stkpv3 -- 绘制股价蜡烛图
 #### 语法
@@ -425,7 +425,7 @@ stkpv3 code, [start(string) end(string) stock index]
 stkpv3 1, start(20180101) end(20180701)
 stkpv3 1, start(20180101) end(20180701) index
 ```
-![](/img/stkpv3.png)
+![](http://www.czxa.top/finance/img/stkpv3.png)
 
 ### stkpv4 -- 绘制股价蜡烛图+移动平均线
 #### 语法
@@ -454,7 +454,7 @@ stkpv4 1, start(20180101) end(20180701)
 stkpv4 1, start(20180101) end(20180701) index
 stkpv4 1, start(20180101) end(20180701) index add(5 15 30 90)
 ```
-![](/img/stkpv4.png)
+![](http://www.czxa.top/finance/img/stkpv4.png)
 
 ###  utrans -- UTF-8转码
 这个可以非常方便的进行文件转码。
